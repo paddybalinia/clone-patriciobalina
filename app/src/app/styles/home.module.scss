@@ -1,0 +1,142 @@
+@import 'vars.scss';
+
+// html,
+// body {
+//     height: 100%;
+// }
+
+.sectionHome {
+    background: #111111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100vw;
+    max-height: 100vh;
+}
+
+.sectionHome:before {
+    content: '';
+    height: 250px;
+    filter: blur(calc(250px / 5));
+    background-image: linear-gradient(rgba(55, 235, 169, 60%), rgba(91, 55, 235, 60%));
+    animation: rotate 40s cubic-bezier(0.8, 0.2, 0.2, 0.8) alternate infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    position: absolute;
+    width: 250px;
+}
+
+.home {
+    padding: 0 0 50px;
+}
+
+.home__span {
+    display: block;
+}
+
+.home__spanMed {
+    font: 400 28px/33px $font-primary;
+}
+
+.home__spanBig {
+    font: bold 39px/42px $font-primary;
+}
+
+.home__spanSma {
+    font: 400 24px/28px $font-primary;
+    color: $color-secondary;
+    margin: 12px 0 0;
+}
+
+
+.home__desc {
+    font: 400 16px/22px $font-primary;
+    margin: 40px auto 70px;
+    max-width: 333px;
+}
+
+.home__scroll {
+    position: absolute;
+    bottom: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.home__scroll:before,
+.home__scroll:after {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+    border-bottom: 4px solid white;
+    border-right: 4px solid white;
+    position: relative;
+    left: 16px;
+}
+
+.home__scroll:before {
+    animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+.home__scroll:after {
+    animation: down-arrow-after 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+
+
+@keyframes down-arrow-before {
+    50% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(70%, 70%);
+    }
+}
+
+@keyframes down-arrow-after {
+    50% {
+        transform: rotate(45deg) translate(110%, 110%);
+        opacity: 0;
+    }
+
+    51% {
+        transform: rotate(45deg) translate(-130%, -130%);
+    }
+
+    100% {
+        transform: rotate(45deg) translate(-70%, -70%);
+        opacity: 1;
+    }
+}
+
+
+@media (min-width: 760px) {
+
+    .home {
+        &__span {
+            &-med {
+                font: 400 41px/41px $font-primary;
+            }
+
+            &-big {
+                font: bold 53px/53px $font-primary;
+            }
+
+            &-sma {
+                font: 400 29px/29px $font-primary;
+
+            }
+        }
+
+        &__desc {
+            font: 400 19px/25px $font-primary;
+            margin: 40px auto 70px;
+            max-width: 680px;
+        }
+
+    }
+}
