@@ -120,7 +120,7 @@
 }
 
 .social__a {
-  background: #1CD3C1;
+  background: var(--color-secondary);
 }
 
 .social__a:hover {
@@ -129,7 +129,7 @@
 }
 
 .social__a:hover svg {
-  fill: #1CD3C1;
+  fill: var(--color-secondary);
 }
 
 .social__a:hover::after {
@@ -184,7 +184,7 @@
 
   .header__nav__a {
     font: bold 22px/22px "Roboto", sans-serif;
-    color: #1CD3C1;
+    color: var(--color-secondary);
     -webkit-transition: all 0.2s ease-out;
     transition: all 0.2s ease-out;
   }
@@ -195,7 +195,7 @@
 
   .header__nav__a:after {
     content: "";
-    background: #1CD3C1;
+    background: var(--color-secondary);
     height: 2px;
     display: block;
     margin: 0 auto;

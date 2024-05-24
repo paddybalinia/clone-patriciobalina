@@ -69,7 +69,7 @@ export default function Header() {
               rel="noopener noreferrer"
               title="Mail"
             >
-              <Mail className={styles.header__logo__svg} />
+              <Mail fill="white" width="20" />
             </Link>
           </li>
           <li className={styles.social__li}>
@@ -80,7 +80,7 @@ export default function Header() {
               rel="noopener noreferrer"
               title="Phone"
             >
-              <Phone className={styles.header__logo__svg} />
+              <Phone fill="white" width="22" />
             </Link>
           </li>
           <li className={styles.social__li}>
@@ -102,7 +102,7 @@ export default function Header() {
               rel="noopener noreferrer"
               title="Github"
             >
-              <Github className={styles.header__logo__svg} />
+              <Github fill="white" width="27" />
             </Link>
           </li>
         </ul>

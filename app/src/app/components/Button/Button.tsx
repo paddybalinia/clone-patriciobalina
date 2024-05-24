@@ -1,5 +1,15 @@
 import style from "../../styles/button.module.scss";
 
+interface ButtonProps {
+  href?: string;
+  title?: string;
+  className?: string;
+  target?: string;
+  rel?: string;
+  children?: React.ReactNode;
+  type?: "button" | "submit" | "reset";
+}
+
 export default function Button({
   children,
   className = "",
@@ -20,13 +30,4 @@ export default function Button({
       )}
     </>
   );
-}
-interface ButtonProps {
-  href?: string;
-  title?: string;
-  className?: string;
-  target?: string;
-  rel?: string;
-  children?: React.ReactNode;
-  type?: "button" | "submit" | "reset";
 }

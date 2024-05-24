@@ -1,5 +1,3 @@
-@import 'vars.scss';
-
 // html,
 // body {
 //     height: 100%;
@@ -37,22 +35,22 @@
 }
 
 .home__spanMed {
-    font: 400 28px/33px $font-primary;
+    font: 400 28px/33px var(--font-primary);
 }
 
 .home__spanBig {
-    font: bold 39px/42px $font-primary;
+    font: bold 39px/42px var(--font-primary);
 }
 
 .home__spanSma {
-    font: 400 24px/28px $font-primary;
-    color: $color-secondary;
+    font: 400 24px/28px var(--font-primary);
+    color: var(--color-secondary);
     margin: 12px 0 0;
 }
 
 
 .home__desc {
-    font: 400 16px/22px $font-primary;
+    font: 400 16px/22px var(--font-primary);
     margin: 40px auto 70px;
     max-width: 333px;
 }
@@ -116,27 +114,31 @@
 
 @media (min-width: 760px) {
 
-    .home {
-        &__span {
-            &-med {
-                font: 400 41px/41px $font-primary;
-            }
+    .sectionHome:before {
+        width: 500px;
+        height: 500px;
+        filter: blur(calc(500px / 5));
+    }
 
-            &-big {
-                font: bold 53px/53px $font-primary;
-            }
+    .home__spanMed {
+        font: 400 41px/41px var(--font-primary);
+    }
 
-            &-sma {
-                font: 400 29px/29px $font-primary;
+    .home__spanBig {
+        font: bold 53px/53px var(--font-primary);
+    }
 
-            }
-        }
-
-        &__desc {
-            font: 400 19px/25px $font-primary;
-            margin: 40px auto 70px;
-            max-width: 680px;
-        }
+    .home__spanSma {
+        font: 400 29px/29px var(--font-primary);
 
     }
+
+
+    .home__desc {
+        font: 400 19px/25px var(--font-primary);
+        margin: 40px auto 70px;
+        max-width: 680px;
+    }
+
+
 }
