@@ -1,4 +1,6 @@
-const Mail = (props: any) => (
+import SvgProps from "./SvgProps";
+
+const Mail: React.FC<SvgProps> = (props) => (
   <svg
     className="social__svg social__svg--mail"
     viewBox="0 0 512 512"

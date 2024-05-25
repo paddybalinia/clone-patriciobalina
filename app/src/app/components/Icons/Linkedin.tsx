@@ -1,4 +1,6 @@
-const Linkedin = (props: any) => (
+import SvgProps from "./SvgProps";
+
+const Linkedin: React.FC<SvgProps> = (props) => (
   <svg
     className="social__svg social__svg--linkedin"
     viewBox="0 0 32 32"

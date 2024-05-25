@@ -1,12 +1,11 @@
 import Link from "next/link";
+import styles from "../../styles/header.module.scss";
+import Github from "../Icons/Github";
+import Linkedin from "../Icons/Linkedin";
 import Logo from "../Icons/Logo";
 import Mail from "../Icons/Mail";
-import Phone from "../Icons/Phone";
-import Linkedin from "../Icons/Linkedin";
-import Github from "../Icons/Github";
-import styles from "../../styles/header.module.scss";
 import Menu from "../Icons/Menu";
-import Button from "../Button/Button";
+import Phone from "../Icons/Phone";
 
 export default function Header() {
   return (

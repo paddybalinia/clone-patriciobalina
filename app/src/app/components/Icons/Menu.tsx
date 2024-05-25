@@ -1,4 +1,6 @@
-const Menu = (props: any) => (
+import SvgProps from "./SvgProps";
+
+const Menu: React.FC<SvgProps> = (props) => (
   <svg width={48} height={32} viewBox="0 0 48 32" fill="none" {...props}>
     <path
       d="M32.5497 16.4351H15.4503C15.2015 16.4351 15 16.2403 15 15.9998C15 15.7592 15.2015 15.5645 15.4503 15.5645H32.5497C32.7985 15.5645 33 15.7592 33 15.9998C33 16.2403 32.7985 16.4351 32.5497 16.4351Z"

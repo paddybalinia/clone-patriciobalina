@@ -1,4 +1,6 @@
-const Github = (props: any) => (
+import SvgProps from "./SvgProps";
+
+const Github: React.FC<SvgProps> = (props) => (
   <svg
     className="social__svg social__svg--secondary social__svg--git"
     xmlns="http://www.w3.org/2000/svg"

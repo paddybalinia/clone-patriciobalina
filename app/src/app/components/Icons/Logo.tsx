@@ -1,4 +1,6 @@
-const Logo = (props: any) => (
+import SvgProps from "./SvgProps";
+
+const Logo: React.FC<SvgProps> = (props) => (
   <svg
     width={314}
     height={27}
