@@ -1,0 +1,76 @@
+.mod__about {
+    background: #fff;
+    padding: 25px 0;
+    position: relative;
+    z-index: 2;
+}
+
+.boxAboutFigure {
+    height: 100px;
+    margin: 0 0 20px;
+    width: 155px;
+}
+
+.boxAboutTitle {
+    color: rgb(0, 0, 1);
+    font: bold 18px/22px "Roboto", sans-serif;
+    margin: 0 0 6px;
+}
+
+.boxAboutText {
+    color: #444;
+    font: 400 15px/20px "Roboto", sans-serif;
+    padding: 0 30px 0 0;
+}
+
+.modAboutContent {
+    display: grid;
+    gap: 20px;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.modAboutCol {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #F8F9FB;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #E9EAEE;
+}
+
+.skillsUl {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skillsA {
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.skillsA:hover {
+    opacity: 0.7;
+}
+
+.modSkills {
+    margin: 30px 0 15px;
+}
+
+@media (min-width: 768px) {
+    .modAboutCol {
+        padding: 26px;
+    }
+
+    .modAboutContent {
+        grid-template-columns: repeat(3, 1fr);
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+}
