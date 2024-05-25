@@ -2,14 +2,13 @@ import Image from "next/image";
 
 import styles from "../../styles/about.module.scss";
 import Row from "../Row/Row";
+import ModHeader from "../ModHeader/ModHeader";
 export default function SectionAbout() {
   return (
     <section id="about" className={styles.mod__about} data-section="about">
       <Row>
         <div className="mod mod__about">
-          <div className="mod__header">
-            <h2 className="mod__header__title">About me</h2>
-          </div>
+          <ModHeader>About me</ModHeader>
 
           <div className={styles.modAboutContent}>
             <div className={styles.modAboutCol}>
@@ -166,9 +165,7 @@ export default function SectionAbout() {
           </div>
         </div>
         <div className={styles.modSkills}>
-          <div className="mod__header">
-            <h2 className="mod__header__title">Skills</h2>
-          </div>
+          <ModHeader>Skills</ModHeader>
           <div className="mod__content">
             <ul className={styles.skillsUl}>
               <li className={styles.skillsLi}>
