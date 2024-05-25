@@ -3,7 +3,12 @@ import Image from "next/image";
 import styles from "../../styles/about.module.scss";
 import Row from "../Row/Row";
 import ModHeader from "../ModHeader/ModHeader";
+import BoxAbout from "../BoxAbout/BoxAbout";
+
+import about from "../../mocks/about.json";
+
 export default function SectionAbout() {
+  const { data } = about;
   return (
     <section id="about" className={styles.mod__about} data-section="about">
       <Row>
@@ -11,157 +16,15 @@ export default function SectionAbout() {
           <ModHeader>About me</ModHeader>
 
           <div className={styles.modAboutContent}>
-            <div className={styles.modAboutCol}>
-              <div className="box-about ">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-efective.svg"
-                    className="box-about__img"
-                    alt="Effective Communication"
-                    title="Effective Communication"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>
-                  Effective Communication
-                </h3>
-                <p className={styles.boxAboutText}>
-                  Ability to work in a team and collaborate with designers,
-                  backend developers, and the client.
-                </p>
+            {data.map((item, index) => (
+              <div key={index} className={styles.modAboutCol}>
+                <BoxAbout
+                  title={item.title}
+                  text={item.text}
+                  image={item.image}
+                ></BoxAbout>
               </div>
-            </div>
-            <div className={styles.modAboutCol}>
-              <div className="box-about">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-problems.svg"
-                    className="box-about__img"
-                    alt="Problem Solving"
-                    title="Problem Solving"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>Problem Solving</h3>
-                <p className={styles.boxAboutText}>
-                  I&apos;m a problem solver who finds creative, practical, and
-                  effective solutions to challenges.
-                </p>
-              </div>
-            </div>
-            <div className={styles.modAboutCol}>
-              <div className="box-about ">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-creativity.svg"
-                    className="box-about__img"
-                    alt="Creativity and Design"
-                    title="Creativity and Design"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>Creativity and Design</h3>
-                <p className={styles.boxAboutText}>
-                  I consider myself a developer with an aesthetic eye, without
-                  neglecting the good practices of web design.
-                </p>
-              </div>
-            </div>
-            <div className={styles.modAboutCol}>
-              <div className="box-about ">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-adaptability.svg"
-                    className="box-about__img"
-                    alt="Adaptability"
-                    title="Adaptability"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>Adaptability</h3>
-                <p className={styles.boxAboutText}>
-                  I am always willing to learn new technologies and stay
-                  up-to-date with the latest trends in Front end development. I
-                  am also able to adapt to changes in project requirements and
-                  work environment.
-                </p>
-              </div>
-            </div>
-            <div className={styles.modAboutCol}>
-              <div className="box-about ">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-timemanagement.svg"
-                    className="box-about__img"
-                    alt="Time Management and Organization"
-                    title="Time Management and Organization"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>
-                  Time Management and Organization
-                </h3>
-                <p className={styles.boxAboutText}>
-                  Ability to set priorities and meet deadlines. Experience with
-                  tools like Trello, Monday, or Slack.
-                </p>
-              </div>
-            </div>
-            <div className={styles.modAboutCol}>
-              <div className="box-about ">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-attentiontodetail.svg"
-                    className="box-about__img"
-                    alt="Attention to Detail"
-                    title="Attention to Detail"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>Attention to Detail</h3>
-                <p className={styles.boxAboutText}>
-                  I focus on creating high-quality, error-free websites. You can
-                  mention your focus on data validation, testing, and quality
-                  assurance.
-                </p>
-              </div>
-            </div>
-            <div className={styles.modAboutCol}>
-              <div className="box-about ">
-                <figure className={styles.boxAboutFigure}>
-                  <Image
-                    loading="lazy"
-                    src="/images/about/about-empathylistening.svg"
-                    className="box-about__img"
-                    alt="Empathy and Active Listening"
-                    title="Empathy and Active Listening"
-                    width="155"
-                    height="100"
-                  />
-                </figure>
-                <h3 className={styles.boxAboutTitle}>
-                  Empathy and Active Listening
-                </h3>
-                <p className={styles.boxAboutText}>
-                  I strive to understand the needs and expectations of end-users
-                  and how this influences Front end development. I enjoy
-                  supporting my teammates, being available for questions or
-                  concerns.
-                </p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
         <div className={styles.modSkills}>

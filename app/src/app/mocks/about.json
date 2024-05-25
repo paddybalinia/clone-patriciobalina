@@ -1,0 +1,84 @@
+{
+  "data": [
+    {
+      "title": "Effective Communication",
+      "text": " Ability to work in a team and collaborate with designers, backend developers, and the client.",
+      "image": {
+        "src": "/images/about/about-efective.svg",
+        "alt": "Effective Communication",
+        "title": "Effective Communication",
+        "width": 155,
+        "height": 100
+      }
+    },
+    {
+      "title": "Problem Solving",
+      "text": " I'm a problem solver who finds creative, practical, and effective solutions to challenges.",
+      "image": {
+        "src": "/images/about/about-problems.svg",
+
+        "alt": "Problem Solving",
+        "title": "Problem Solving",
+        "width": 155,
+        "height": 100
+      }
+    },
+    {
+      "title": "Creativity and Design",
+      "text": "I consider myself a developer with an aesthetic eye, without neglecting the good practices of web design.",
+      "image": {
+        "src": "/images/about/about-creativity.svg",
+        "alt": "Creativity and Design",
+        "title": "Creativity and Design",
+        "width": 155,
+        "height": 100
+      }
+    },
+    {
+      "title": "Adaptability",
+      "text": "I am always willing to learn new technologies and stay up-to-date with the latest trends in Front end development. I am also able to adapt to changes in project requirements and work environment.",
+      "image": {
+        "src": "/images/about/about-adaptability.svg",
+        "alt": "Adaptability",
+        "title": "Adaptability",
+        "width": 155,
+        "height": 100
+      }
+    },
+    {
+      "title": "Time Management and Organization",
+      "text": "Ability to set priorities and meet deadlines. Experience with tools like Trello, Monday, or Slack.",
+      "image": {
+        "src": "/images/about/about-timemanagement.svg",
+
+        "alt": "Time Management and Organization",
+        "title": "Time Management and Organization",
+        "width": 155,
+        "height": 100
+      }
+    },
+    {
+      "title": "Attention to Detail",
+      "text": "I focus on creating high-quality, error-free websites. You can mention your focus on data validation, testing, and quality assurance.",
+      "image": {
+        "src": "/images/about/about-attentiontodetail.svg",
+
+        "alt": "Attention to Detail",
+        "title": "Attention to Detail",
+        "width": 155,
+        "height": 100
+      }
+    },
+    {
+      "title": "Empathy and Active Listening",
+      "text": "I strive to understand the needs and expectations of end-users and how this influences Front end development. I enjoy supporting my teammates, being available for questions or concerns.",
+      "image": {
+        "src": "/images/about/about-empathylistening.svg",
+        "alt": "Empathy and Active Listening",
+        "title": "Empathy and Active Listening",
+        "width": 155,
+        "height": 100
+      }
+    }
+  ]
+}
