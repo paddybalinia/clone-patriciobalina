@@ -1,0 +1,64 @@
+{
+  "experience": [
+    {
+      "year": {
+        "start": "2023",
+        "end": "2024"
+      },
+      "position": "Freelance Front End Developer",
+      "agency": {
+        "title": "Freelance Web Developer",
+        "link": "http://www.patriciobalina.com.ar/"
+      },
+      "description": "I build interactive web interfaces that captivate users. My magic with HTML, CSS, and JavaScript ensures fluid and frictionless experiences. I integrate front-end functionalities with the backend for seamless operation, optimize performance for breakneck speed, and make it compatible with everything from desktop to smartphones. I keep the code impeccable and clean, so everything keeps running like a dream.",
+      "tags": [
+        "HTML 5",
+        "CSS 3",
+        "SASS",
+        "JAVASCRIPT",
+        "GIT",
+        "GITHUB",
+        "RESPONSIVE DESIGN",
+        "SEO",
+        "PERFORMANCE OPTIMIZATION"
+      ],
+      "image": {
+        "src": "/images/work/work-patriciobalina.jpg",
+        "title": "Freelance Front End Developer",
+        "alt": "Freelance Front End Developer",
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "year": {
+        "start": "2023",
+        "end": "2024"
+      },
+      "position": "Freelance Front End Developer",
+      "agency": {
+        "title": "Freelance Web Developer",
+        "link": "http://www.patriciobalina.com.ar/"
+      },
+      "description": "I build interactive web interfaces that captivate users. My magic with HTML, CSS, and JavaScript ensures fluid and frictionless experiences. I integrate front-end functionalities with the backend for seamless operation, optimize performance for breakneck speed, and make it compatible with everything from desktop to smartphones. I keep the code impeccable and clean, so everything keeps running like a dream.",
+      "tags": [
+        "HTML 5",
+        "CSS 3",
+        "SASS",
+        "JAVASCRIPT",
+        "GIT",
+        "GITHUB",
+        "RESPONSIVE DESIGN",
+        "SEO",
+        "PERFORMANCE OPTIMIZATION"
+      ],
+      "image": {
+        "src": "/images/work/work-patriciobalina.jpg",
+        "title": "Freelance Front End Developer",
+        "alt": "Freelance Front End Developer",
+        "width": 100,
+        "height": 100
+      }
+    }
+  ]
+}

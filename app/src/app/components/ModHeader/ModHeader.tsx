@@ -6,7 +6,7 @@ export default function ModHeader({
   children: React.ReactNode;
 }>) {
   return (
-    <div className={styles.modHeader}>
+    <div className="mod__header">
       <h2 className={styles.modHeaderTitle}>{children}</h2>
     </div>
   );
