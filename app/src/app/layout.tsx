@@ -10,6 +10,9 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Patricio Baliña | Frontend Developer",
   description: "Frontend Developer",
+  keywords:
+    "front end, front end developer,front end web developer, Front end Developer, HTML, CSS, Javascript, React, Github",
+  alternates: { canonical: "https://www.patriciobalina.com.ar/" },
 };
 
 export default function RootLayout({
