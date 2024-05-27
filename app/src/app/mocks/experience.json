@@ -32,15 +32,15 @@
     },
     {
       "year": {
-        "start": "2023",
-        "end": "2024"
+        "start": "2016",
+        "end": "2023"
       },
-      "position": "Freelance Front End Developer",
+      "position": "Senior Front End Developer",
       "agency": {
-        "title": "Freelance Web Developer",
-        "link": "http://www.patriciobalina.com.ar/"
+        "title": "Senior Front End Developer",
+        "link": "https://iconosur.com/"
       },
-      "description": "I build interactive web interfaces that captivate users. My magic with HTML, CSS, and JavaScript ensures fluid and frictionless experiences. I integrate front-end functionalities with the backend for seamless operation, optimize performance for breakneck speed, and make it compatible with everything from desktop to smartphones. I keep the code impeccable and clean, so everything keeps running like a dream.",
+      "description": "At Iconosur, I led the development and maintenance of user interfaces for high-traffic websites with millions of daily visits. Collaborating closely with designers and developers, I implemented new features and functionalities, ensuring visual quality and optimal platform performance. This experience honed my front-end skills and equipped me to successfully navigate large-scale challenges. I acquired solid web development expertise through methodologies like BEM and Pixel Perfect, implemented optimization and SEO strategies, built semantic webs, and wielded Vanilla JS. Recently, I've shifted focus to crafting attractive and functional interfaces with Next.js and React JS.",
       "tags": [
         "HTML 5",
         "CSS 3",
@@ -48,14 +48,98 @@
         "JAVASCRIPT",
         "GIT",
         "GITHUB",
+        "REACT JS",
         "RESPONSIVE DESIGN",
+        "JSX",
         "SEO",
         "PERFORMANCE OPTIMIZATION"
       ],
       "image": {
-        "src": "/images/work/work-patriciobalina.jpg",
+        "src": "/images/work/work-iconosur.jpg",
+        "title": "Senior Front End Developer",
+        "alt": "Senior Front End Developer",
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "year": {
+        "start": "2015",
+        "end": "2016"
+      },
+      "position": "Part Time Front End Developer",
+      "agency": {
+        "title": "Part Time Front End Developer",
+        "link": "https://studiohakuna.com/"
+      },
+      "description": "At Hakuna, I utilized Bootstrap's capabilities to craft responsive and visually appealing institutional websites for non-profit organizations. Focusing on clean layouts and interactive elements like animated infographics, I seamlessly converted design mockups and user stories into functional WordPress themes. Throughout the development process, I collaborated closely with designers and developers, transcribing their ideas into intuitive websites that met client requirements.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JAVASCRIPT",
+        "JQUERY",
+        "GITHUB",
+        "BOOTSTRAP",
+        "WORDPRESS"
+      ],
+      "image": {
+        "src": "/images/work/work-hakuna.jpg",
+        "title": "Studio Hakuna",
+        "alt": "Logo Studio Hakuna",
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "year": {
+        "start": "2014",
+        "end": "2016"
+      },
+      "position": "Freelance Front End Developer",
+      "agency": {
         "title": "Freelance Front End Developer",
-        "alt": "Freelance Front End Developer",
+        "link": "http://www.patriciobalina.com.ar/"
+      },
+      "description": "I collaborated with clients on the construction of institutional websites, using HTML, CSS, and jQuery. I designed and styled visual elements with CSS, implemented dynamic interactions with jQuery, and provided guidance on best practices. I ensured responsiveness by conducting extensive testing on different devices and browsers. I maintained clear communication and met client expectations at every stage of the project.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JAVASCRIPT",
+        "JQUERY",
+        "GITHUB",
+        "RESPONSIVE DESIGN"
+      ],
+      "image": {
+        "src": "/images/work/work-patriciobalina.jpg",
+        "title": "Patricio Baliña",
+        "alt": "Logo Patricio Baliña Front End",
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "year": {
+        "start": "2011",
+        "end": "2014"
+      },
+      "position": "Junior Front End Developer",
+      "agency": {
+        "title": "DHNN (design has no name)",
+        "link": "https://dhnn.com/"
+      },
+      "description": "I collaborated with the design team to create creative websites. I worked closely with designers and UX/UI specialists to implement attractive front-end designs. I converted design concepts into HTML, CSS, and JavaScript code. I adapted my skills to achieve unique and impactful solutions. I contributed to the creation of websites that reflected the brand identity and applied the latest web design trends.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JAVASCRIPT",
+        "JQUERY",
+        "ILLUSTRATOR",
+        "PHOTOSHOP"
+      ],
+      "image": {
+        "src": "/images/work/work-dhnn.jpg",
+        "title": "DHNN (design has no name)",
+        "alt": "Logo DHNN (design has no name)",
         "width": 100,
         "height": 100
       }

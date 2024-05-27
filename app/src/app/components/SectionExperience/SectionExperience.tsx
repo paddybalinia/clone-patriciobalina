@@ -2,31 +2,45 @@ import Image from "next/image";
 import ModHeader from "../ModHeader/ModHeader";
 import Row from "../Row/Row";
 import styles from "../../styles/experience.module.scss";
+import data from "../../mocks/experience.json";
+import BoxExperience from "../BoxExperience/BoxExperience";
+import BoxAbout from "../BoxAbout/BoxAbout";
 
 export default function SectionExperience() {
+  const { experience } = data;
+
   return (
     <section id="work" className={styles.sectionWork} data-section="work">
       <Row>
         <div className="mod mod__experience">
-          <ModHeader>Work experience</ModHeader>
+          <ModHeader experience>Work experience</ModHeader>
 
           <span id="linea" className="work__line"></span>
-          <ul className="work__ul">
-            <li
-              className="work__li viewport-observer animation-bottom"
-              data-speed="0.07"
-            >
-              <div className="work-item">
-                <div className="work-item__aside">
-                  <span className="work-item__years">
+          <ul className={styles.workUl}>
+            {experience.map((item, index) => (
+              <BoxExperience
+                key={index}
+                year={item.year}
+                position={item.position}
+                agency={item.agency}
+                image={item.image}
+                description={item.description}
+                tags={item.tags}
+              ></BoxExperience>
+            ))}
+
+            {/* <li className={styles.workLi} data-speed="0.07">
+              <div className={styles.workItem}>
+                <div className={styles.workItemAside}>
+                  <span className={styles.workItemYears}>
                     {" "}
-                    <span id="elemento1" className="work-item__bg">
+                    <span id="elemento1" className={styles.workItemBg}>
                       2023 - 2024
                     </span>
                   </span>
                 </div>
-                <div className="work-item__main">
-                  <figure className="work-item__figure">
+                <div className={styles.workItemMain}>
+                  <figure className={styles.workItemFigure}>
                     <a
                       href="http://www.patriciobalina.com.ar"
                       target="_blank"
@@ -37,18 +51,18 @@ export default function SectionExperience() {
                         src="/images/work/work-patriciobalina.jpg"
                         width="100"
                         height="100"
-                        className="work-item__img"
+                        className={styles.workItemImg}
                         alt="Freelance Front End Developer"
                         title="Freelance Front End Developer"
                       />
                     </a>
                   </figure>
-                  <div className="work-item__data">
-                    <h3 className="work-item__title">
+                  <div className="workItem__data">
+                    <h3 className={styles.workItemTitle}>
                       Freelance Front End Developer
                     </h3>
                     <a
-                      className="work-item__subtitle"
+                      className={styles.workItemSubtitle}
                       href="http://www.patriciobalina.com.ar"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -56,7 +70,7 @@ export default function SectionExperience() {
                     >
                       Freelance Web Developer
                     </a>
-                    <p className="work-item__desc">
+                    <p className={styles.workItemDesc}>
                       I build interactive web interfaces that captivate users.
                       My magic with HTML, CSS, and JavaScript ensures fluid and
                       frictionless experiences. I integrate front-end
@@ -66,35 +80,35 @@ export default function SectionExperience() {
                       keep the code impeccable and clean, so everything keeps
                       running like a dream.
                     </p>
-                    <ul className="work-item__ul">
-                      <li className="work-item__li">
-                        <span className="work-item__skill">html 5</span>
+                    <ul className={styles.workItemUl}>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>html 5</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">CSS 3</span>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>CSS 3</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">SASS</span>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>SASS</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">JavaScript</span>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>JavaScript</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">Git</span>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>Git</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">Github</span>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>Github</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>
                           Responsive Design
                         </span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">SEO</span>
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>SEO</span>
                       </li>
-                      <li className="work-item__li">
-                        <span className="work-item__skill">
+                      <li className={styles.workItemLi}>
+                        <span className={styles.workItemSkill}>
                           Performance optimization
                         </span>
                       </li>
@@ -102,12 +116,9 @@ export default function SectionExperience() {
                   </div>
                 </div>
               </div>
-            </li>
+            </li> */}
 
-            <li
-              className="work__li viewport-observer animation-bottom"
-              data-speed="0.07"
-            >
+            {/* <li className={styles.workLi} data-speed="0.07">
               <div className="work-item">
                 <div className="work-item__aside">
                   <span className="work-item__years">
@@ -205,10 +216,7 @@ export default function SectionExperience() {
               </div>
             </li>
 
-            <li
-              className="work__li viewport-observer animation-bottom"
-              data-speed="0.07"
-            >
+            <li className={styles.workLi} data-speed="0.07">
               <div className="work-item">
                 <div className="work-item__aside">
                   <span className="work-item__years">
@@ -287,10 +295,7 @@ export default function SectionExperience() {
               </div>
             </li>
 
-            <li
-              className="work__li viewport-observer animation-bottom"
-              data-speed="0.07"
-            >
+            <li className={styles.workLi} data-speed="0.07">
               <div className="work-item">
                 <div className="work-item__aside">
                   <span className="work-item__years">
@@ -367,10 +372,7 @@ export default function SectionExperience() {
               </div>
             </li>
 
-            <li
-              className="work__li viewport-observer animation-bottom"
-              data-speed="0.07"
-            >
+            <li className={styles.workLi} data-speed="0.07">
               <div className="work-item">
                 <div className="work-item__aside">
                   <span className="work-item__years">
@@ -462,7 +464,7 @@ export default function SectionExperience() {
                   Linkedin Profile
                 </a>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </Row>
