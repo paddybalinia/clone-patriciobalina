@@ -1,7 +1,32 @@
 import Image from "next/image";
 import styles from "../../styles/experience.module.scss";
 
-export default function BoxExperience() {
+interface year {
+  start: string;
+  end: string;
+}
+interface agency {
+  title: string;
+  link: string;
+}
+interface image {
+  src: string;
+  title?: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+interface items {
+  year?: year;
+  position?: string;
+  agency?: agency;
+  image: image;
+  description: string;
+  tags: string[];
+}
+
+export default function BoxExperience(props: items) {
+  const { year, position, agency, image, description, tags } = props;
   return (
     <li className={styles.workLi} data-speed="0.07">
       <div className={styles.workItem}>
