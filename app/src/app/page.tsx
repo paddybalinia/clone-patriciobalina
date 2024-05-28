@@ -1,5 +1,6 @@
 import Header from "./components/Header/Header";
 import SectionAbout from "./components/SectionAbout/SectionAbout";
+import SectionContact from "./components/SectionContact/SectionContact";
 import SectionExperience from "./components/SectionExperience/SectionExperience";
 import SectionHome from "./components/SectionHome/SectionHome";
 import styles from "./styles/page.module.scss";
@@ -11,6 +12,7 @@ export default function Home() {
       <SectionHome />
       <SectionAbout />
       <SectionExperience />
+      <SectionContact />
     </main>
   );
 }
