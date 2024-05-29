@@ -9,7 +9,11 @@ export default function ModHeader({
 }>) {
   return (
     <div className="mod__header">
-      <h2 className={styles.modHeaderTitle}>{children}</h2>
+      <h2
+        className={`${styles.modHeaderTitle} ${experience && styles.secondary}`}
+      >
+        {children}
+      </h2>
     </div>
   );
 }
