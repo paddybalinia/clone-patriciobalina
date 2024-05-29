@@ -7,7 +7,12 @@ import Mail from "../Icons/Mail";
 import Menu from "../Icons/Menu";
 import Phone from "../Icons/Phone";
 
-export default function Header() {
+interface ToggleButtonProps {
+  setIsNavVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
+export default function Header(props: ToggleButtonProps) {
+  const { setIsNavVisible } = props;
+
   return (
     <header className={styles.header}>
       <div className={styles.header__logo}>
@@ -19,6 +24,7 @@ export default function Header() {
         aria-label="open nav"
         className={styles.header__toggle}
         data-togglenav
+        onClick={() => setIsNavVisible((statePrev) => !statePrev)}
       >
         <Menu />
       </button>

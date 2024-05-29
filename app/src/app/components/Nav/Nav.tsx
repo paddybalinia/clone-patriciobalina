@@ -5,15 +5,23 @@ import Linkedin from "../Icons/Linkedin";
 import Mail from "../Icons/Mail";
 import Phone from "../Icons/Phone";
 
-export default function Nav() {
+interface NavProps {
+  isVisible: boolean;
+  setIsNavVisible: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Nav(props: NavProps) {
+  const { isVisible, setIsNavVisible } = props;
+  //   console.log(isVisible);
   return (
     <>
-      <nav className={`${styles.nav} ${styles.active}`}>
+      <nav className={`${styles.nav}  ${isVisible && styles.active}`}>
         <button
           type="button"
           aria-label="close nav"
           className={styles.nav__toggle}
           data-togglenav
+          onClick={() => setIsNavVisible((prev) => !prev)}
         >
           <Cross />
         </button>
@@ -25,7 +33,7 @@ export default function Nav() {
               className={styles.nav__a}
               title="Home"
               rel="noopener noreferrer"
-              data-anchor="home"
+              onClick={() => setIsNavVisible((prev) => !prev)}
             >
               Home
             </a>
@@ -36,7 +44,7 @@ export default function Nav() {
               className={styles.nav__a}
               title="About"
               rel="noopener noreferrer"
-              data-anchor="about"
+              onClick={() => setIsNavVisible((prev) => !prev)}
             >
               About
             </a>
@@ -47,7 +55,7 @@ export default function Nav() {
               className={styles.nav__a}
               title="Experience"
               rel="noopener noreferrer"
-              data-anchor="work"
+              onClick={() => setIsNavVisible((prev) => !prev)}
             >
               Experience
             </a>
@@ -58,7 +66,7 @@ export default function Nav() {
               className={styles.nav__a}
               title="Contact"
               rel="noopener noreferrer"
-              data-anchor="contact"
+              onClick={() => setIsNavVisible((prev) => !prev)}
             >
               Contact
             </a>
@@ -189,7 +197,10 @@ export default function Nav() {
           />
         </svg>
       </nav>
-      <div className={styles.nav__overlay} data-togglenav></div>
+      <div
+        className={`${styles.nav__overlay} ${isVisible && styles.active}`}
+        onClick={() => setIsNavVisible((prev) => !prev)}
+      ></div>
     </>
   );
 }
