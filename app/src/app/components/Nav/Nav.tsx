@@ -6,8 +6,8 @@ import Mail from "../Icons/Mail";
 import Phone from "../Icons/Phone";
 
 interface NavProps {
-  isVisible?: boolean;
-  setIsNavVisible?: React.Dispatch<React.SetStateAction<boolean>>;
+  isVisible: boolean;
+  setIsNavVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export default function Nav(props: NavProps) {

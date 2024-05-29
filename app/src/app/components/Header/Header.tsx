@@ -8,7 +8,7 @@ import Menu from "../Icons/Menu";
 import Phone from "../Icons/Phone";
 
 interface ToggleButtonProps {
-  setIsNavVisible?: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsNavVisible: React.Dispatch<React.SetStateAction<boolean>>;
 }
 export default function Header(props: ToggleButtonProps) {
   const { setIsNavVisible } = props;
