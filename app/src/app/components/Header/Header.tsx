@@ -16,7 +16,7 @@ export default function Header(props: ToggleButtonProps) {
 
   const [scrollTop, setscrollTop] = useState(0);
   const [top, setTop] = useState(0);
-  const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+  const [viewportHeight, setViewportHeight] = useState(300);
 
   const handleResize = () => {
     if (typeof window !== "undefined") {
