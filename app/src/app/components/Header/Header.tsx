@@ -6,6 +6,7 @@ import Logo from "../Icons/Logo";
 import Mail from "../Icons/Mail";
 import Menu from "../Icons/Menu";
 import Phone from "../Icons/Phone";
+import { useEffect, useState } from "react";
 
 interface ToggleButtonProps {
   setIsNavVisible: React.Dispatch<React.SetStateAction<boolean>>;
@@ -13,8 +14,51 @@ interface ToggleButtonProps {
 export default function Header(props: ToggleButtonProps) {
   const { setIsNavVisible } = props;
 
+  const [scrollTop, setscrollTop] = useState(0);
+  const [top, setTop] = useState(0);
+  const [viewportHeight, setViewportHeight] = useState(300);
+
+  const handleResize = () => {
+    if (typeof window !== "undefined") {
+      setViewportHeight(window.innerHeight);
+    }
+  };
+  const handleScroll = () => {
+    if (typeof window !== "undefined") {
+      setscrollTop(window.scrollY);
+
+      const scrollY = window.scrollY;
+
+      let newTop = 0;
+
+      if (scrollY >= viewportHeight) {
+        newTop = Math.min(0, -60 + scrollY - viewportHeight);
+      } else {
+        newTop = 0;
+      }
+      setTop(newTop);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      addEventListener("resize", handleResize);
+      addEventListener("scroll", handleScroll);
+
+      return () => {
+        removeEventListener("scroll", handleScroll);
+        removeEventListener("resize", handleResize);
+      };
+    }
+  }, [viewportHeight]);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${styles.header} ${
+        scrollTop > viewportHeight && styles.header__beforesticky
+      }`}
+      style={{ top: `${top}px` }}
+    >
       <div className={styles.header__logo}>
         <Logo className={styles.header__logo__svg} />
       </div>
