@@ -43,12 +43,12 @@
   // gap: 20px;
 }
 
-.header--animation {
+.header__animation {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
 
-.header--beforesticky {
+.header__beforesticky {
   -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2509803922);
   box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.2509803922);
   background: white;
@@ -60,7 +60,7 @@
   z-index: 8;
 }
 
-.header--sticky {
+.header__sticky {
   top: 0%;
 }
 
@@ -156,7 +156,7 @@
     margin-top: 20px;
   }
 
-  .header--beforesticky {
+  .header__beforesticky {
     top: -100%;
     margin-top: 0px;
   }
@@ -165,7 +165,7 @@
     top: 17px;
   }
 
-  .header--sticky {
+  .header__sticky {
     top: 0;
   }
 
@@ -222,23 +222,23 @@
     top: 11px;
   }
 
-  .header--beforesticky .header__nav__a.active {
+  .header__beforesticky .header__nav__a.active {
     color: black;
   }
 
-  .header--beforesticky .header__nav__a.active:after {
+  .header__beforesticky .header__nav__a.active:after {
     background: black;
   }
 
-  .header--beforesticky .social__a:hover {
+  .header__beforesticky .social__a:hover {
     background: black;
   }
 
-  .header--beforesticky .social__a:hover svg {
+  .header__beforesticky .social__a:hover svg {
     fill: white;
   }
 
-  .header--beforesticky .social__a:hover::after {
+  .header__beforesticky .social__a:hover::after {
     -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
   }
