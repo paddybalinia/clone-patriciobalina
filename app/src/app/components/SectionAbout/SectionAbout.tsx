@@ -1,14 +1,19 @@
+"use client";
 import Image from "next/image";
 
 import styles from "../../styles/about.module.scss";
+import css from "../../styles/viewport.module.scss";
 import Row from "../Row/Row";
 import ModHeader from "../ModHeader/ModHeader";
 import BoxAbout from "../BoxAbout/BoxAbout";
 
 import about from "../../mocks/about.json";
+import useViewportObserver from "@/app/hooks/ViewportObserver";
 
 export default function SectionAbout() {
   const { data } = about;
+
+  useViewportObserver(".viewport-observer", `${css.viewportObserverVisible}`);
   return (
     <section id="about" className={styles.mod__about} data-section="about">
       <Row>
@@ -16,15 +21,21 @@ export default function SectionAbout() {
           <ModHeader>About me</ModHeader>
 
           <div className={styles.modAboutContent}>
-            {data.map((item, index) => (
-              <div key={index} className={styles.modAboutCol}>
-                <BoxAbout
-                  title={item.title}
-                  text={item.text}
-                  image={item.image}
-                ></BoxAbout>
-              </div>
-            ))}
+            {data.map((item, index) => {
+              const delayClass = css[`delay_${index}`];
+              return (
+                <div
+                  key={index}
+                  className={`${styles.modAboutCol} ${css.viewportObserver} ${css.animationTop} ${delayClass}  viewport-observer`}
+                >
+                  <BoxAbout
+                    title={item.title}
+                    text={item.text}
+                    image={item.image}
+                  ></BoxAbout>
+                </div>
+              );
+            })}
           </div>
         </div>
         <div className={styles.modSkills}>
