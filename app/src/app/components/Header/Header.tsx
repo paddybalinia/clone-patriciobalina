@@ -18,13 +18,14 @@ export default function Header(props: ToggleButtonProps) {
   const [top, setTop] = useState(0);
   const [viewportHeight, setViewportHeight] = useState(300);
 
-  const handleResize = () => {
+  useEffect(() => {
     if (typeof window !== "undefined") {
       setViewportHeight(window.innerHeight);
     }
-  };
-  const handleScroll = () => {
-    if (typeof window !== "undefined") {
+    const handleResize = () => {
+      setViewportHeight(window.innerHeight);
+    };
+    const handleScroll = () => {
       setscrollTop(window.scrollY);
 
       const scrollY = window.scrollY;
@@ -37,19 +38,15 @@ export default function Header(props: ToggleButtonProps) {
         newTop = 0;
       }
       setTop(newTop);
-    }
-  };
+    };
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      addEventListener("resize", handleResize);
-      addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
-      return () => {
-        removeEventListener("scroll", handleScroll);
-        removeEventListener("resize", handleResize);
-      };
-    }
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
+    };
   }, [viewportHeight]);
 
   return (
