@@ -42,7 +42,9 @@ export default function SectionAbout() {
           <ModHeader>Skills</ModHeader>
           <div className="mod__content">
             <ul className={styles.skillsUl}>
-              <li className={styles.skillsLi}>
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_2} viewport-observer`}
+              >
                 <a
                   href="https://www.w3schools.com/css/"
                   className={styles.skillsA}
@@ -60,7 +62,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-3">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_3} viewport-observer`}
+              >
                 <a
                   href="https://www.w3.org/html/"
                   className={styles.skillsA}
@@ -78,7 +82,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-4">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_4} viewport-observer`}
+              >
                 <a
                   href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
                   className={styles.skillsA}
@@ -96,7 +102,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-5">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_5} viewport-observer`}
+              >
                 <a
                   href="https://sass-lang.com/"
                   className={styles.skillsA}
@@ -114,7 +122,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-6">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_6} viewport-observer`}
+              >
                 <a
                   href="https://gulpjs.com/"
                   className={styles.skillsA}
@@ -132,7 +142,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-7">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_7} viewport-observer`}
+              >
                 <a
                   href="https://git-scm.com/"
                   className={styles.skillsA}
@@ -150,7 +162,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-8">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_8} viewport-observer`}
+              >
                 <a
                   href="https://www.figma.com/"
                   className={styles.skillsA}
@@ -168,7 +182,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-9">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_9} viewport-observer`}
+              >
                 <a
                   href="https://jquery.com/"
                   className={styles.skillsA}
@@ -186,7 +202,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-10">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_10} viewport-observer`}
+              >
                 <a
                   href="https://react.dev/"
                   className={styles.skillsA}
@@ -204,7 +222,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-11">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_11} viewport-observer`}
+              >
                 <a
                   href="https://www.adobe.com/in/products/illustrator.html"
                   className={styles.skillsA}
@@ -222,7 +242,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-12">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_12} viewport-observer`}
+              >
                 <a
                   href="https://www.adobe.com/products/photoshop.html"
                   className={styles.skillsA}
@@ -240,7 +262,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-13">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_13} viewport-observer`}
+              >
                 <a
                   href="https://www.sketch.com/"
                   className={styles.skillsA}
@@ -258,7 +282,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-14">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_14} viewport-observer`}
+              >
                 <a
                   href="https://helpx.adobe.com/support/xd.html"
                   className={styles.skillsA}
@@ -276,7 +302,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-15">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_15} viewport-observer`}
+              >
                 <a
                   href="https://github.com/"
                   className={styles.skillsA}
@@ -294,7 +322,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-16">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_16} viewport-observer`}
+              >
                 <a
                   href="https://code.visualstudio.com/"
                   className={styles.skillsA}
@@ -312,7 +342,9 @@ export default function SectionAbout() {
                   />
                 </a>
               </li>
-              <li className="skills__li viewport-observer delay-17">
+              <li
+                className={`${styles.skillsLi} ${css.viewportObserver} ${css.delay_17} viewport-observer`}
+              >
                 <a
                   href="https://getbem.com/"
                   className={styles.skillsA}
