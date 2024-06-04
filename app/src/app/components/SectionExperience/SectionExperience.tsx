@@ -1,11 +1,10 @@
 import Image from "next/image";
-import ModHeader from "../ModHeader/ModHeader";
-import Row from "../Row/Row";
+import data from "../../mocks/experience.json";
 import styles from "../../styles/experience.module.scss";
 import stylesQuote from "../../styles/quote.module.scss";
-import data from "../../mocks/experience.json";
 import BoxExperience from "../BoxExperience/BoxExperience";
-import BoxAbout from "../BoxAbout/BoxAbout";
+import ModHeader from "../ModHeader/ModHeader";
+import Row from "../Row/Row";
 
 export default function SectionExperience() {
   const { experience } = data;

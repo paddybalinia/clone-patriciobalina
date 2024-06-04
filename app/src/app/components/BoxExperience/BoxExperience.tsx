@@ -1,5 +1,8 @@
+"use client";
 import Image from "next/image";
 import styles from "../../styles/experience.module.scss";
+import css from "../../styles/viewport.module.scss";
+import useViewportObserver from "@/app/hooks/ViewportObserver";
 
 interface year {
   start: string;
@@ -27,8 +30,11 @@ interface items {
 
 export default function BoxExperience(props: items) {
   const { year, position, agency, image, description, tags } = props;
+  useViewportObserver(".viewport-observer", `${css.viewportObserverVisible}`);
   return (
-    <li className={styles.workLi} data-speed="0.07">
+    <li
+      className={`${styles.workLi} viewport-observer ${css.viewportObserver} ${css.delay_6}`}
+    >
       <div className={styles.workItem}>
         <div className={styles.workItemAside}>
           <span className={styles.workItemYears}>
