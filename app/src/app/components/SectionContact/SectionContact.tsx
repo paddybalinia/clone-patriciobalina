@@ -5,8 +5,11 @@ import Mail from "../Icons/Mail";
 import Phone from "../Icons/Phone";
 import Whatsapp from "../Icons/Whatsapp";
 import Row from "../Row/Row";
+import css from "../../styles/viewport.module.scss";
+import useViewportObserver from "@/app/hooks/ViewportObserver";
 
 export default function SectionContact() {
+  useViewportObserver(".viewport-observer", `${css.viewportObserverVisible}`);
   return (
     <section
       id="contact"
@@ -34,7 +37,9 @@ export default function SectionContact() {
           </a>
 
           <ul className={style.socialUl}>
-            <li className={style.socialLi}>
+            <li
+              className={`${style.socialLi} viewport-observer ${css.viewportObserver} ${css.delay_6}`}
+            >
               <a
                 href="mailto:paddybalinia@gmail.com?subject=Contact%20from%20website&body=Hi%20Paddy!"
                 className={style.socialA}
@@ -45,7 +50,9 @@ export default function SectionContact() {
                 <Mail fill="white" width="20" />
               </a>
             </li>
-            <li className={style.socialLi}>
+            <li
+              className={`${style.socialLi} viewport-observer ${css.viewportObserver} ${css.delay_7}`}
+            >
               <a
                 href="tel:+5491160416194"
                 className={style.socialA}
@@ -56,7 +63,9 @@ export default function SectionContact() {
                 <Phone fill="white" width="22" />
               </a>
             </li>
-            <li className={style.socialLi}>
+            <li
+              className={`${style.socialLi} viewport-observer ${css.viewportObserver} ${css.delay_8}`}
+            >
               <a
                 href="https://www.linkedin.com/in/patriciobalina-frontend-developer"
                 className={style.socialA}
@@ -67,7 +76,9 @@ export default function SectionContact() {
                 <Linkedin width="22" fill="white" />
               </a>
             </li>
-            <li className={style.socialLi}>
+            <li
+              className={`${style.socialLi} viewport-observer ${css.viewportObserver} ${css.delay_9}`}
+            >
               <a
                 href="https://github.com/paddybalinia"
                 className={style.socialA}
@@ -78,7 +89,9 @@ export default function SectionContact() {
                 <Github width="27" fill="white" />
               </a>
             </li>
-            <li className={style.socialLi}>
+            <li
+              className={`${style.socialLi} viewport-observer ${css.viewportObserver} ${css.delay_10}`}
+            >
               <a
                 href="http://wa.link/ca8d5v"
                 className={style.socialA}

@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
-import styles from "../../styles/experience.module.scss";
-import css from "../../styles/viewport.module.scss";
+import styles from "@/app/styles/experience.module.scss";
+import css from "@/app/styles/viewport.module.scss";
 import useViewportObserver from "@/app/hooks/ViewportObserver";
 
 interface year {
