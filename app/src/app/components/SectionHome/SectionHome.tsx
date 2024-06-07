@@ -1,6 +1,6 @@
-import styles from "../../styles/home.module.scss";
-import Button from "../Button/Button";
-import Row from "../Row/Row";
+import styles from "@/app/styles/home.module.scss";
+import Button from "@/app/components/Button/Button";
+import Row from "@/app/components/Row/Row";
 
 export default function SectionHome() {
   return (

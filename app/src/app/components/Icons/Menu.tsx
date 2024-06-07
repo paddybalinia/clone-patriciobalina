@@ -1,4 +1,4 @@
-import SvgProps from "./SvgProps";
+import SvgProps from "@/app/components/Icons/SvgProps";
 
 const Menu: React.FC<SvgProps> = (props) => (
   <svg width={48} height={32} viewBox="0 0 48 32" fill="none" {...props}>

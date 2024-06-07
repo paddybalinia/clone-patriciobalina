@@ -1,4 +1,4 @@
-import SvgProps from "./SvgProps";
+import SvgProps from "@/app/components/Icons/SvgProps";
 
 const Whatsapp = (props: SvgProps) => (
   <svg

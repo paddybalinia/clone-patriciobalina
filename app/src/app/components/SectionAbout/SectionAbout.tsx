@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
 
-import styles from "../../styles/about.module.scss";
-import css from "../../styles/viewport.module.scss";
+import styles from "@/app/styles/about.module.scss";
+import css from "@/app/styles/viewport.module.scss";
 import Row from "../Row/Row";
-import ModHeader from "../ModHeader/ModHeader";
-import BoxAbout from "../BoxAbout/BoxAbout";
+import ModHeader from "@/app/components/ModHeader/ModHeader";
+import BoxAbout from "@/app/components/BoxAbout/BoxAbout";
 
-import about from "../../mocks/about.json";
+import about from "@/app/mocks/about.json";
 import useViewportObserver from "@/app/hooks/ViewportObserver";
 
 export default function SectionAbout() {

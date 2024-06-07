@@ -1,11 +1,11 @@
 import Link from "next/link";
-import styles from "../../styles/header.module.scss";
-import Github from "../Icons/Github";
-import Linkedin from "../Icons/Linkedin";
-import Logo from "../Icons/Logo";
-import Mail from "../Icons/Mail";
-import Menu from "../Icons/Menu";
-import Phone from "../Icons/Phone";
+import styles from "@/app/styles/header.module.scss";
+import Github from "@/app/components/Icons/Github";
+import Linkedin from "@/app/components/Icons/Linkedin";
+import Logo from "@/app/components/Icons/Logo";
+import Mail from "@/app/components/Icons/Mail";
+import Menu from "@/app/components/Icons/Menu";
+import Phone from "@/app/components/Icons/Phone";
 import { useEffect, useState } from "react";
 
 interface ToggleButtonProps {

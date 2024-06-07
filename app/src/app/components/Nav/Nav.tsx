@@ -1,10 +1,10 @@
-import styles from "../../styles/nav.module.scss";
-import Cross from "../Icons/Cross";
-import Github from "../Icons/Github";
-import Linkedin from "../Icons/Linkedin";
-import Logo from "../Icons/Logo";
-import Mail from "../Icons/Mail";
-import Phone from "../Icons/Phone";
+import styles from "@/app/styles/nav.module.scss";
+import Cross from "@/app/components/Icons/Cross";
+import Github from "@/app/components/Icons/Github";
+import Linkedin from "@/app/components/Icons/Linkedin";
+import Logo from "@/app/components/Icons/Logo";
+import Mail from "@/app/components/Icons/Mail";
+import Phone from "@/app/components/Icons/Phone";
 
 interface NavProps {
   isVisible: boolean;

@@ -1,4 +1,4 @@
-import style from "../../styles/button.module.scss";
+import style from "@/app/styles/button.module.scss";
 
 interface ButtonProps {
   href?: string;
