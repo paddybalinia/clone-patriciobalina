@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Header from "../Header/Header";
-import Nav from "../Nav/Nav";
+import Header from "@/app/components/Header/Header";
+import Nav from "@/app/components/Nav/Nav";
 
 export default function ClientWrapper() {
   const [isNavVisible, setIsNavVisible] = useState<boolean>(false);

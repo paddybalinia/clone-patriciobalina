@@ -1,11 +1,11 @@
-import style from "../../styles/contact.module.scss";
-import Github from "../Icons/Github";
-import Linkedin from "../Icons/Linkedin";
-import Mail from "../Icons/Mail";
-import Phone from "../Icons/Phone";
-import Whatsapp from "../Icons/Whatsapp";
-import Row from "../Row/Row";
-import css from "../../styles/viewport.module.scss";
+import style from "@/app/styles/contact.module.scss";
+import Github from "@/app/components/Icons/Github";
+import Linkedin from "@/app/components/Icons/Linkedin";
+import Mail from "@/app/components/Icons/Mail";
+import Phone from "@/app/components/Icons/Phone";
+import Whatsapp from "@/app/components/Icons/Whatsapp";
+import Row from "@/app/components/Row/Row";
+import css from "@/app/styles/viewport.module.scss";
 import useViewportObserver from "@/app/hooks/ViewportObserver";
 
 export default function SectionContact() {

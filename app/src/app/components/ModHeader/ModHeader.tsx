@@ -1,4 +1,4 @@
-import styles from "../../styles/modHeader.module.scss";
+import styles from "@/app/styles/modHeader.module.scss";
 
 export default function ModHeader({
   children,

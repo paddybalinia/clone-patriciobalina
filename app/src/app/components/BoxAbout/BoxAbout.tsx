@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "../../styles/about.module.scss";
+import styles from "@/app/styles/about.module.scss";
 
 interface imgData {
   src: string;
