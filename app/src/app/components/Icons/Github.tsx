@@ -1,4 +1,4 @@
-import SvgProps from "@/app/components/Icons/SvgProps;
+import SvgProps from "@/app/components/Icons/SvgProps";
 
 const Github: React.FC<SvgProps> = (props) => (
   <svg

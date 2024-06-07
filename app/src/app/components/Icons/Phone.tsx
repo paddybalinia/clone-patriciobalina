@@ -1,4 +1,4 @@
-import SvgProps from "@/app/components/Icons/SvgProps;
+import SvgProps from "@/app/components/Icons/SvgProps";
 
 const Phone: React.FC<SvgProps> = (props) => (
   <svg className="social__svg social__svg--tel" viewBox="0 0 24 24" {...props}>

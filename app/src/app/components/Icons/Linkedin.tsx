@@ -1,4 +1,4 @@
-import SvgProps from "@/app/components/Icons/SvgProps;
+import SvgProps from "@/app/components/Icons/SvgProps";
 
 const Linkedin: React.FC<SvgProps> = (props) => (
   <svg
